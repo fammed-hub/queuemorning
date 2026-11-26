@@ -96,7 +96,8 @@ var SHEET_ID = sheetId(P.get("id")) || DEFAULT_SHEET_ID;
 var TAB = P.get("tab") || DEFAULT_TAB;
 var HOSPITAL_NAME = "ศูนย์การแพทย์กาญจนาภิเษก";   // ชื่อ รพ. ที่แสดงบนหัวจอ
 var DEPARTMENT = "แผนกเวชศาสตร์ครอบครัว";    // ชื่อแผนก/จุดบริการ
-var NOTICE = "การเรียกคิวเข้าพบแพทย์อาจไม่เป็นไปตามลำดับคิว เนื่องจากมีผู้ป่วยที่มีอาการเร่งด่วน, ผู้ป่วยรอผลเลือด/เอ็กซเรย์ ขออภัยในความไม่สะดวกค่ะ";
+var NOTICE = "การเรียกคิวเข้าพบแพทย์อาจไม่เป็นไปตามลำดับคิว เนื่องจากมีผู้ป่วยที่มีอาการเร่งด่วน, ผู้ป่วยรอผลเลือด/เอ็กซเรย์ ขออภัยในความไม่สะดวกค่ะ
+  The doctor's queue may not be in order due to medical urgency, emergency cases and patients waiting for lab/X-ray results";
 var POLL_MS = 3000;                       // รีเฟรชทุก 3 วินาที
 var MISSED_SHOWN = 16;                    // จำนวนคิว "เรียกไม่พบ" สูงสุดที่แสดง (2 คอลัมน์ x 8 แถว)
 var S_MISSED = "เรียกไม่พบ Queue not found";             // สถานะที่จะแสดงในช่องด้านขวา
