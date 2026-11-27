@@ -145,8 +145,8 @@ function render(){
   // แสดงเฉพาะคิวที่สถานะเป็น "เรียกไม่พบ" (เรียงตามลำดับในชีต)
   var missed = rows.filter(function(r){ return r.s === S_MISSED; });
   var html = missed.slice(0, MISSED_SHOWN).map(function(r){ return '<div class="item">' + r.q + "</div>"; }).join("");
-  $("missTitle").textContent = missed.length > MISSED_SHOWN ? "เรียกไม่พบ (และอีก " + (missed.length - MISSED_SHOWN) + " คิว)" : "เรียกไม่พบ";
-  $("list").innerHTML = html || '<div class="empty">ไม่มีคิวที่เรียกไม่พบ</div>';
+  $("missTitle").textContent = missed.length > MISSED_SHOWN ? "เรียกไม่พบ / Queue not found (และอีก " + (missed.length - MISSED_SHOWN) + " คิว)" : "เรียกไม่พบ / Queue not found";
+  $("list").innerHTML = html || '<div class="empty">ไม่มีคิวที่เรียกไม่พบ / No queue not found</div>';
 
   $("dot").classList.toggle("off", !ok);
   $("stat").textContent = ok ? "เชื่อมต่อแล้ว" : "ขาดการเชื่อมต่อ กำลังลองใหม่";
